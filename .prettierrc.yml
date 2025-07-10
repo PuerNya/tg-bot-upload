@@ -1,0 +1,11 @@
+experimentalTernaries: true
+experimentalOperatorPosition: start
+tabWidth: 2
+semi: false
+singleQuote: true
+quoteProps: as-needed
+jsxSingleQuote: true
+bracketSpacing: true
+objectWrap: preserve
+bracketSameLine: true
+arrowParens: always
