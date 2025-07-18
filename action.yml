@@ -1,0 +1,29 @@
+name: tg-bot-upload
+description: Using telegram bot to upload something
+inputs:
+  bot-id:
+    description: telegram bot id
+    required: true
+  chat-id:
+    description: telegram chat id
+    required: true
+  file-path:
+    description: telegram chat topic id
+    required: true
+  backend:
+    description: telegram bot api backend
+    required: false
+    default: 'api.telegram.org'
+  topic-id:
+    description: telegram chat topic id
+    required: false
+  caption-path:
+    description: file message caption
+    required: false
+  parse-mode:
+    description: caption parse mode
+    required: false
+    default: 'MarkdownV2'
+runs:
+  using: 'node20'
+  main: 'dist/index.js'

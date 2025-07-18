@@ -1,0 +1,28 @@
+{
+  "name": "tg-bot-upload",
+  "module": "src/index.ts",
+  "version": "v1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prepare": "husky",
+    "clean": "rm -rf dist",
+    "prettier": "git diff --cached --name-only | prettier --write",
+    "prettier-all": "prettier *.ts --write",
+    "dev": "node src/index.ts"
+  },
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "glob": "^11.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.12",
+    "@typescript/native-preview": "^7.0.0-dev.20250710.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
+    "prettier": "^3.6.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}

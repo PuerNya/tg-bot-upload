@@ -1,0 +1,4 @@
+bun lint-staged
+bun run clean
+bun build --target=node --minify --format=esm --outdir=dist src/index.ts
+git add dist
